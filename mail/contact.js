@@ -1,5 +1,4 @@
 $(function () {
-
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {
@@ -25,6 +24,12 @@ $(function () {
                 },
                 cache: false,
                 success: function () {
+                    // CÓDIGO AGREGADO PARA EL SEGUIMIENTO DE GOOGLE ADS
+                    gtag('event', 'envio_formulario', {
+                        'event_category': 'Contacto',
+                        'event_label': 'Formulario de contacto'
+                    });
+
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
