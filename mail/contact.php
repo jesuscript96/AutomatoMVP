@@ -36,6 +36,10 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Habilitar encriptación TLS
     $mail->Port       = 587; // Puerto TCP para Gmail
 
+    // Modo de depuración (0 = desactivado, 1 = cliente, 2 = servidor y cliente)
+    // Para las pruebas, establece esto en 2 para ver la conversación entre el servidor y el cliente.
+    $mail->SMTPDebug = 2;
+
     // Destinatarios del correo
     $mail->setFrom('jvalenzuela.chulia@gmail.com', 'Formulario Web'); // Correo del remitente (debe ser el mismo que el Username)
     $mail->addAddress('jvalenzuela.chulia@gmail.com'); // 📥 Dirección de correo donde recibirás el mensaje
@@ -49,11 +53,14 @@ try {
 
     // Enviar el correo
     $mail->send();
-    // Si el envío es exitoso, enviar una respuesta 200 (OK) al frontend
+    // Si el envío es exitoso, envía una respuesta 200 (OK) al frontend
     http_response_code(200);
+
 } catch (Exception $e) {
-    // Si hay un error, enviar una respuesta 500
+    // Si hay un error, imprime el mensaje de error detallado para depuración.
+    // Esto es muy útil para saber si falla la autenticación, la conexión, etc.
+    // Este código debe ser eliminado una vez que el formulario funcione correctamente.
+    echo "¡Error de envío! El mensaje de error de PHPMailer es: {$mail->ErrorInfo}";
     http_response_code(500);
 }
-
 ?>
