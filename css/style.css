@@ -9691,3 +9691,17 @@ h6,
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 991.98px) {
+  .navbar {
+    background-color: #ffffff !important; /* Fondo blanco */
+  }
+
+  .navbar .nav-item .nav-link {
+    color: #000000 !important; /* Texto negro para contraste */
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1); /* Cambia el color del ícono del menú (hamburguesa) a negro */
+  }
+}
