@@ -9675,3 +9675,19 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
+.btn-whatsapp {
+    background-color: white;
+    color: #25d366;
+    border: 2px solid #25d366;
+    font-weight: bold;
+    border-radius: 8px; /* Un poco de redondeo */
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+}
