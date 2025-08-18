@@ -32,7 +32,7 @@ try {
     $mail->Host       = 'smtp.gmail.com'; // Servidor SMTP de Gmail
     $mail->SMTPAuth   = true; // Habilitar autenticación SMTP
     $mail->Username   = 'jvalenzuela.chulia@gmail.com'; // 📧 Reemplaza con tu dirección de Gmail
-    $mail->Password   = 'tnmem ulqn axgv jdqr'; // 🔑 Reemplaza con la contraseña de aplicación de Google
+    $mail->Password   = 'tnmemulqnaxgvjdqr'; // 🔑 Reemplaza con la contraseña de aplicación de Google
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Habilitar encriptación TLS
     $mail->Port       = 587; // Puerto TCP para Gmail
 
