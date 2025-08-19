@@ -64,6 +64,9 @@ html {
     filter: invert(1);
     /* Cambia el color del ícono del menú (hamburguesa) a negro */
   }
+   .navbar-dark .navbar-nav .nav-link {
+    color: #000000 !important;
+  }
 }
 
 article,
@@ -10906,5 +10909,9 @@ h6,
   .navbar-toggler-icon {
     filter: invert(1);
     /* Cambia el color del ícono del menú (hamburguesa) a negro */
+  }
+
+   .navbar-dark .navbar-nav .nav-link {
+    color: #000000 !important;
   }
 }
