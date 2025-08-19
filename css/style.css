@@ -5,46 +5,35 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-
- @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap');
-
-
 :root {
-  /* Paleta de colores principal */
-  --primary: #D96C5F;        /* Salmón del logo */
-  --primary-dark: #C25A50;   /* Una versión más oscura para :hover */
-  --secondary: #484848;       /* Gris oscuro para texto (estilo Airbnb) */
-  --accent: #F9ECCC;          /* Crema de las semillas del tomate */
-  --white: #ffffff;
-
-  /* Paleta de grises y utilidades */
-  --gray-dark: #222222;
-  --gray: #717171;
-  --gray-light: #EBEBEB;      /* Para bordes suaves */
-  --gray-lighter: #F7F7F7;    /* Para fondos de sección */
-
-  /* ... Mantén los colores de Bootstrap como success, danger, etc. ... */
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #e48070;
+  --secondary: #131313;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
   --danger: #dc3545;
-
-  /* Tipografía */
-  --font-family-sans-serif: "Nunito Sans", sans-serif; /* ¡Aplica la nueva fuente aquí! */
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  
-  /* Nuevas variables para consistencia de diseño */
-  --border-radius: 0.5rem;    /* Bordes redondeados (8px) */
-  --border-radius-lg: 1rem;   /* Bordes más redondeados para tarjetas (16px) */
-  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --box-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
-
-
+  --light: #f8f9fa;
+  --dark: #343a40;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Raleway", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 *,
@@ -95,13 +84,13 @@ section {
 
 body {
   margin: 0;
-  font-family: var(--font-family-sans-serif); /* Usará Nunito Sans */
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.6; /* Un poco más de espacio entre líneas */
-  color: var(--secondary); /* Color de texto principal */
+  line-height: 1.5;
+  color: #4A4A4A;
   text-align: left;
-  background-color: var(--white);
+  background-color: #fff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -121,9 +110,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: 0.75rem;
-  font-weight: 700; /* O incluso 800 para un look más moderno */
-  color: var(--gray-dark);
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -199,11 +186,13 @@ sup {
 }
 
 a {
-  color: var(--primary);
+  color: #FDAC53;
   text-decoration: none;
+  background-color: transparent;
 }
+
 a:hover {
-  color: var(--primary-dark);
+  color: #fc8807;
   text-decoration: underline;
 }
 
@@ -2693,21 +2682,30 @@ textarea.form-control.is-invalid {
 }
 
 .btn {
-  font-weight: 600;
-  padding: 0.75rem 1.5rem; /* Más grandes y cómodos */
-  border-radius: var(--border-radius); /* Redondeados */
-  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  font-weight: 400;
+  color: #4A4A4A;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
   border: 1px solid transparent;
-}
-.btn:hover {
-  transform: translateY(-2px); /* Efecto sutil al pasar el cursor */
-  box-shadow: var(--box-shadow-sm);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
   }
+}
+
+.btn:hover {
+  color: #4A4A4A;
+  text-decoration: none;
 }
 
 .btn:focus,
@@ -2731,14 +2729,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: var(--white);
-  background-color: var(--primary);
-  border-color: var(--primary);
+  color: #212529;
+  background-color: #FDAC53;
+  border-color: #FDAC53;
 }
+
 .btn-primary:hover {
-  color: var(--white);
-  background-color: var(--primary-dark);
-  border-color: var(--primary-dark);
+  color: #212529;
+  background-color: #fd9a2d;
+  border-color: #fc9421;
 }
 
 .btn-primary:focus,
@@ -4896,15 +4895,14 @@ input[type="button"].btn-block {
 }
 
 .card {
-  border: none; /* ¡Muy importante! Quita el borde. */
-  border-radius: var(--border-radius-lg); /* Bordes más pronunciados */
-  box-shadow: var(--box-shadow); /* La sombra es el nuevo borde */
-  transition: all 0.2s ease-in-out;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .card>hr {
