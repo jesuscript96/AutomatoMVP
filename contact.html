@@ -33,6 +33,26 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            color: white;
+        }
+
+        .hero-buttons {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -70,6 +90,13 @@
             <p class="m-0 px-2">/</p>
             <p class="m-0">Contacto</p>
         </div>
+        <div class="hero-buttons">
+            
+            <a href="https://wa.me/34600412492?text=Hola,%20quiero%20un%20presupuesto%20claro%20y%20rápido%20para%20..."
+                class="btn btn-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> Contacta por WhatsApp
+            </a>
+        </div>
     </div>
     <div class="container-fluid pt-5 pb-3">
         <div class="container">
@@ -80,115 +107,17 @@
                     <h1 class="mt-2 mb-3">Cuéntanos tu idea en 30 minutos</h1>
                     <h4 class="font-weight-normal text-muted mb-4">Si quieres saber exactamente cuánto cuesta hacer tu
                         proyecto y en cuánto tiempo puede estar listo, haz click para agendar una llamada</h4>
-                    <!-- <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-                    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script> -->
-                    <div id="reservar-cita-container">
-                        <!-- <script>
-                            (function () {
-                                var target = document.currentScript;
-                                window.addEventListener('load', function () {
-                                    calendar.schedulingButton.load({
-                                        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2WLDjrBwGe809S4XP43AvuxhBdt0MhqClJlANC65waHr53EkcpKuos4uT1vl_hCUtEVlrmmfCc?gv=true',
-                                        color: '#039BE5',
-                                        label: 'Reservar una cita',
-                                        target,
-                                    });
-                                });
-                            })();
-                        </script> -->
-                        <!-- Principio del widget integrado de Calendly -->
-                        <!-- <div class="calendly-inline-widget" data-url="https://calendly.com/automato-agency"
-                            style="min-width:320px;height:700px;"></div>
-                        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
-                            async></script> -->
-                        <!-- Final del widget integrado de Calendly -->
-                        <!-- Principio del widget de enlace de Calendly -->
-                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
-                            async></script>
-                        <a href=""
-                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/automato-agency'});return false;" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold my-2">Agendar reunión</a>
-                        <!-- Final del widget de enlace de Calendly -->
-                    </div>
+                        <div id="reservar-cita-container">
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                                async></script>
+                            <a href=""
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/automato-agency'});return false;" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold my-2">Agendar reunión</a>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- <div class="container-fluid py-5">
-        <div class="container">
-            <div class="text-center">
-                <small class="bg-primary text-white text-uppercase font-weight-bold text-center px-1">Contáctanos</small>
-                <h1 class="mt-2 mb-5">Realiza cualquier consulta</h1>
-            </div>
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="d-flex align-items-center border mb-3 p-4">
-                        <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Dónde estamos</h5>
-                            <p class="m-0">Ciudad de México, México</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center border mb-3 p-4">
-                        <i class="fa fa-2x fa-envelope-open text-primary mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Manda Email</h5>
-                            <p class="m-0">jvalenzuela.chulia@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center border mb-3 mb-md-0 p-4">
-                        <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h5 class="font-weight-bold">Envía un Whatsapp</h5>
-                            <p class="m-0">+34600412492</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="contact-form">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="col-md-6">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control p-4" id="name" placeholder="Tu nombre"
-                                            required="required"
-                                            data-validation-required-message="Porfavor indica tu nombre" />
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="control-group">
-                                        <input type="email" class="form-control p-4" id="email" placeholder="Tu Email"
-                                            required="required"
-                                            data-validation-required-message="Porfavor indica tu email" />
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Tu consulta"
-                                    required="required"
-                                    data-validation-required-message="Porfavor indica tu consulta" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control" rows="5" id="message" placeholder="Mensaje"
-                                    required="required"
-                                    data-validation-required-message="Por favor escribe tu mensaje"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;"
-                                    type="submit" id="sendMessageButton">Enviar consulta</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <div class="container-fluid py-5">
         <div class="container">
@@ -251,7 +180,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min..js"></script>
 
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
