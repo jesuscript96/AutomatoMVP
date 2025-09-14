@@ -19,7 +19,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #e48070;
+  --primary: #007BFF;
   --secondary: #131313;
   --success: #28a745;
   --info: #17a2b8;
@@ -187,13 +187,13 @@ sup {
 }
 
 a {
-  color: #FDAC53;
+  color: #007BFF;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #fc8807;
+  color: #007BFF;
   text-decoration: underline;
 }
 
@@ -2686,10 +2686,14 @@ textarea.form-control.is-invalid {
   border-radius: 5px;
 }
 
+.whiteh1 {
+  color: white;
+} 
+
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #4A4A4A;
+  color: #fff;
   text-align: center;
   vertical-align: middle;
   user-select: none;
@@ -2734,15 +2738,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #212529;
-  background-color: #FDAC53;
-  border-color: #FDAC53;
+  color: #fff;
+  background-color: #007BFF;
+  border-color: #007BFF;
 }
 
 .btn-primary:hover {
   color: #212529;
-  background-color: #fd9a2d;
-  border-color: #fc9421;
+  background-color: #007BFF;
+  border-color: #007BFF;
 }
 
 .btn-primary:focus,
@@ -3062,8 +3066,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #FDAC53;
-  border-color: #FDAC53;
+  color: #007BFF;
+  border-color: #007BFF;
 }
 
 .btn-outline-primary:hover {
@@ -5213,7 +5217,7 @@ a.badge:focus {
 
 .badge-primary {
   color: #212529;
-  background-color: #FDAC53;
+  background-color: #007BFF;
 }
 
 a.badge-primary:hover,
@@ -6717,7 +6721,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #FDAC53 !important;
+  background-color: #007BFF !important;
 }
 
 a.bg-primary:hover,
@@ -10440,7 +10444,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #FDAC53 !important;
+  color: #007BFF !important;
 }
 
 a.text-primary:hover,
@@ -10713,7 +10717,7 @@ h6,
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #FDAC53;
+  color: #007BFF;
 }
 
 @media (max-width: 991.98px) {
@@ -10777,7 +10781,7 @@ h6,
 }
 
 .carousel-indicators .active {
-  background-color: #FDAC53;
+  background-color: #007BFF;
 }
 
 @media (max-width: 991.98px) {
@@ -10859,7 +10863,7 @@ h6,
 
 .team-carousel .owl-dot.active,
 .testimonial-carousel .owl-dot.active {
-  background: #FDAC53;
+  background: #007BFF;
 }
 
 .team-item .team-overlay {
