@@ -1032,14 +1032,6 @@
             }
           }
         }, 400);
-
-        /* Accessibility: allow clicking config options (radio-like) */
-        document.addEventListener('click', (e) => {
-          if (e.target && e.target.matches('.option[data-value]')) {
-            const v = e.target.getAttribute('data-value');
-            selectService(v);
-          }
-        });
     </script>
 </body>
 </html>
