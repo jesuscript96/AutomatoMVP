@@ -361,7 +361,7 @@
                             <div class="d-flex flex-column align-items-center justify-content-center bg-primary p-4 borderradius">
                                 <h3 class="whiteh1">Desde</h3>
                                 <h1 class="display-4 mb-0 whiteh1">
-                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">$MN</small>2000
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">$MN</small>4000
                                 </h1>
                             </div>
                             <div class="border border-top-0 d-flex flex-column align-items-center py-4 borderradius">
@@ -376,7 +376,7 @@
                             <div class="d-flex flex-column align-items-center justify-content-center bg-primary p-4 borderradius">
                                 <h3 class="whiteh1">Desde</h3>
                                 <h1 class="display-4 mb-0 whiteh1">
-                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">$MN</small>5000
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">$MN</small>10000
                                 </h1>
                             </div>
                             <div class="border border-top-0 d-flex flex-column align-items-center py-4 borderradius">
@@ -443,7 +443,7 @@
                                         <div style="font-size:13px;color:#6b7280">Rápida y enfocada en captación</div>
                                     </div>
                                     <div style="text-align:right">
-                                        <div style="font-weight:700;color:#0f6fff">$2,000 / $3,000</div>
+                                        <div style="font-weight:700;color:#0f6fff">$4,000 / $6,000</div>
                                         <div style="font-size:12px;color:#6b7280">Agregar a web / Desde cero</div>
                                     </div>
                                 </div>
@@ -453,7 +453,7 @@
                                         <div style="font-size:13px;color:#6b7280">Home, Contacto, Servicios, etc.</div>
                                     </div>
                                     <div style="text-align:right">
-                                        <div style="font-weight:700;color:#0f6fff">$5,000 / $8,000</div>
+                                        <div style="font-weight:700;color:#0f6fff">$10,000 / $16,000</div>
                                         <div style="font-size:12px;color:#6b7280">Estática / E-commerce</div>
                                     </div>
                                 </div>
@@ -569,28 +569,28 @@
         /* ---------- Datos de precios (MXN) ---------- */
         const PRICES = {
           landing: {
-            existing: 2000,
-            fromZero: 3000,
+            existing: 4000,
+            fromZero: 6000,
             extras: {
-              ga: 500,
-              ads: 500,
-              tagManager: 500,
-              smartForm: 1000,
-              calendar: 1000,
-              chatbot: 1500
+              ga: 1000,
+              ads: 1000,
+              tagManager: 1000,
+              smartForm: 2000,
+              calendar: 2000,
+              chatbot: 3000
             }
           },
           web: {
-            static: 5000,
-            ecommerce: 8000,
+            static: 10000,
+            ecommerce: 16000,
             extras: {
-              paymentGateway: 2000,
-              gallery: 2000,
-              blog: 2000,
-              integrationPerPage: 500,
-              smartForm: 1000,
-              calendar: 1000,
-              chatbot: 1500
+              paymentGateway: 4000,
+              gallery: 4000,
+              blog: 4000,
+              integrationPerPage: 1000,
+              smartForm: 2000,
+              calendar: 2000,
+              chatbot: 3000
             }
           }
         };
@@ -662,12 +662,12 @@
           if (state.service === 'landing') {
             configOptions.innerHTML = `
               <label class="option opt-config" data-value="existing">
-                <div><input type="radio" name="config" value="existing"> <strong>Añadir a web existente</strong><div class="tiny muted">$2,000 MXN</div></div>
-                <div style="font-weight:700;color:#0f6fff">$2,000</div>
+                <div><input type="radio" name="config" value="existing"> <strong>Añadir a web existente</strong><div class="tiny muted">$4,000 MXN</div></div>
+                <div style="font-weight:700;color:#0f6fff">$4,000</div>
               </label>
               <label class="option opt-config" data-value="fromZero">
-                <div><input type="radio" name="config" value="fromZero"> <strong>Crear desde cero</strong><div class="tiny muted">$3,000 MXN</div></div>
-                <div style="font-weight:700;color:#0f6fff">$3,000</div>
+                <div><input type="radio" name="config" value="fromZero"> <strong>Crear desde cero</strong><div class="tiny muted">$6,000 MXN</div></div>
+                <div style="font-weight:700;color:#0f6fff">$6,000</div>
               </label>
             `;
             setTimeout(() => {
@@ -680,12 +680,12 @@
           } else if (state.service === 'web') {
             configOptions.innerHTML = `
               <label class="option opt-config" data-value="static">
-                <div><input type="radio" name="config" value="static"> <strong>Web estática</strong><div class="tiny muted">$5,000 MXN</div></div>
-                <div style="font-weight:700;color:#0f6fff">$5,000</div>
+                <div><input type="radio" name="config" value="static"> <strong>Web estática</strong><div class="tiny muted">$10,000 MXN</div></div>
+                <div style="font-weight:700;color:#0f6fff">$10,000</div>
               </label>
               <label class="option opt-config" data-value="ecommerce">
-                <div><input type="radio" name="config" value="ecommerce"> <strong>E-commerce</strong><div class="tiny muted">$8,000 MXN</div></div>
-                <div style="font-weight:700;color:#0f6fff">$8,000</div>
+                <div><input type="radio" name="config" value="ecommerce"> <strong>E-commerce</strong><div class="tiny muted">$16,000 MXN</div></div>
+                <div style="font-weight:700;color:#0f6fff">$16,000</div>
               </label>
             `;
             setTimeout(() => {
@@ -719,7 +719,7 @@
           { id: 'smartForm', label: 'Formulario inteligente (cualificación de leads)', price: PRICES.landing.extras.smartForm, appliesTo: ['landing', 'web'] },
           { id: 'calendar', label: 'Calendario para agendar reuniones', price: PRICES.landing.extras.calendar, appliesTo: ['landing', 'web'] },
           { id: 'chatbot', label: 'Chatbot inteligente', price: PRICES.landing.extras.chatbot, appliesTo: ['landing', 'web'] },
-          { id: 'integrationPerPage', label: 'Integraciones Google (por página) - $500/página', price: PRICES.web.extras.integrationPerPage, appliesTo: ['web'] },
+          { id: 'integrationPerPage', label: 'Integraciones Google (por página) - $1000/página', price: PRICES.web.extras.integrationPerPage, appliesTo: ['web'] },
           { id: 'gallery', label: 'Galería personalizada', price: PRICES.web.extras.gallery, appliesTo: ['web'] },
           { id: 'blog', label: 'Creación de blog', price: PRICES.web.extras.blog, appliesTo: ['web'] },
           { id: 'paymentGateway', label: 'Pasarela de pago (solo e-commerce)', price: PRICES.web.extras.paymentGateway, appliesTo: ['web'] }
