@@ -1033,5 +1033,20 @@
           }
         }, 400);
     </script>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script>
+        ScrollReveal().reveal('h1, h2, h3, h4, h5, p, div[class*="col-"], .testimonial-item, .team-item', {
+            delay: 100,
+            distance: '50px',
+            origin: 'bottom',
+            opacity: 0,
+            duration: 750,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            interval: 100,
+            reset: false
+        });
+    </script>
 </body>
 </html>
