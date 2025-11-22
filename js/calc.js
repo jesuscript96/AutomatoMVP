@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
         message += `*~${total} MXN*\n\n`;
         message += `¡Quedo a la espera de su respuesta!`;
 
-        const telefono = '34600412492'; // Tu número de WhatsApp
+        const telefono = '525623229505'; // Tu número de WhatsApp
         const url = `https://wa.me/${telefono}?text=${encodeURIComponent(message)}`;
 
         window.open(url, '_blank');
