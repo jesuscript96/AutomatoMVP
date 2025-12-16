@@ -10959,3 +10959,7 @@ h6,
 .inmobiliarias-menu .navbar-dark .navbar-nav .nav-link.active {
   color: #007BFF !important;
 }
+
+#header-carousel .carousel-item {
+    height: 100vh;
+}
