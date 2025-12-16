@@ -1,670 +1,701 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KZWB6CP2');</script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KZWB6CP2');</script>
   <!-- End Google Tag Manager -->
 
-    <meta charset="utf-8">
-    <title>Automato Agency</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="keywords"
-        content="diseño web, desarrollo web, tiendas online, e-commerce, portafolios online, agendamiento de citas, reservaciones online, agencias digitales, soluciones web, web para pymes, web a medida">
-    <meta name="description"
-        content="Impulsamos tu negocio con diseño y desarrollo web profesional. Creamos tiendas online, portafolios digitales y sistemas de reservaciones para que tu marca crezca.">
+  <meta charset="utf-8">
+  <title>Automato Agency</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="keywords"
+    content="diseño web, desarrollo web, tiendas online, e-commerce, portafolios online, agendamiento de citas, reservaciones online, agencias digitales, soluciones web, web para pymes, web a medida">
+  <meta name="description"
+    content="Impulsamos tu negocio con diseño y desarrollo web profesional. Creamos tiendas online, portafolios digitales y sistemas de reservaciones para que tu marca crezca.">
 
-    <!-- Favicon -->
-    <link href="img/LOGO2.png" rel="icon" type="img/png">
+  <!-- Favicon -->
+  <link href="img/LOGO2.png" rel="icon" type="img/png">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Arial&family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arial&family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
 
-    <!-- ====== Estilos específicos calculadora (namespaced para evitar conflictos) ====== -->
-    <style>
-        /* Mobile-first responsive */
-        .calc-wrap {
-            width: 100%;
-            max-width: 1100px;
-            margin: 0 auto 32px;
-            padding: 18px;
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(11, 18, 32, 0.04);
-            font-family: "Montserrat", Arial, sans-serif;
-            box-sizing: border-box;
-        }
+  <!-- ====== Estilos específicos calculadora (namespaced para evitar conflictos) ====== -->
+  <style>
+    /* Mobile-first responsive */
+    .calc-wrap {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto 32px;
+      padding: 18px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(11, 18, 32, 0.04);
+      font-family: "Montserrat", Arial, sans-serif;
+      box-sizing: border-box;
+    }
 
-        .calc-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 18px;
-        }
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
 
-        /* Progress bar vertical on mobile, horizontal on desktop */
-        .calc-progress {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-bottom: 6px;
-        }
+    /* Progress bar vertical on mobile, horizontal on desktop */
+    .calc-progress {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
 
-        .calc-progress .step-pill {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 14px;
-            color: #6b7280;
-        }
+    .calc-progress .step-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      color: #6b7280;
+    }
 
-        .calc-progress .step-pill .dot {
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            border: 2px solid #cbd5e1;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: #fff;
-            font-weight: 700;
-            color: #374151;
-            font-size: 13px;
-        }
+    .calc-progress .step-pill .dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 2px solid #cbd5e1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      font-weight: 700;
+      color: #374151;
+      font-size: 13px;
+    }
 
-        .calc-progress .step-pill.active .dot {
-            background: #0f6fff;
-            color: #fff;
-            border-color: #0f6fff;
-        }
+    .calc-progress .step-pill.active .dot {
+      background: #0f6fff;
+      color: #fff;
+      border-color: #0f6fff;
+    }
 
-        .calc-steps {
-            /* steps container (left) */
-        }
+    .calc-steps {
+      /* steps container (left) */
+    }
 
-        .calc-step {
-            display: none;
-        }
+    .calc-step {
+      display: none;
+    }
 
-        .calc-step.active {
-            display: block;
-        }
+    .calc-step.active {
+      display: block;
+    }
 
-        .mini-view {
-            background: #fbfdff;
-            border-radius: 10px;
-            padding: 12px;
-            border: 1px solid rgba(11, 18, 32, 0.04);
-            margin-bottom: 12px;
-        }
+    .mini-view {
+      background: #fbfdff;
+      border-radius: 10px;
+      padding: 12px;
+      border: 1px solid rgba(11, 18, 32, 0.04);
+      margin-bottom: 12px;
+    }
 
-        .option {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 12px;
-            padding: 10px;
-            border-radius: 10px;
-            border: 1px solid rgba(11, 18, 32, 0.06);
-            background: #fff;
-            cursor: pointer;
-            margin-bottom: 8px;
-        }
+    .option {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid rgba(11, 18, 32, 0.06);
+      background: #fff;
+      cursor: pointer;
+      margin-bottom: 8px;
+    }
 
-        .option.active {
-            border-color: #0f6fff;
-            box-shadow: 0 8px 24px rgba(15, 111, 255, 0.08);
-        }
+    .option.active {
+      border-color: #0f6fff;
+      box-shadow: 0 8px 24px rgba(15, 111, 255, 0.08);
+    }
 
-        .option input {
-            margin-right: 8px;
-        }
+    .option input {
+      margin-right: 8px;
+    }
 
-        .options-grid {
-            display: grid;
-            gap: 8px;
-        }
+    .options-grid {
+      display: grid;
+      gap: 8px;
+    }
 
-        .calc-controls {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 12px;
-            gap: 8px;
-        }
+    .calc-controls {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12px;
+      gap: 8px;
+    }
 
-        .calc-btn {
-            padding: 10px 14px;
-            border-radius: 10px;
-            border: 0;
-            cursor: pointer;
-            font-weight: 700;
-        }
+    .calc-btn {
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 0;
+      cursor: pointer;
+      font-weight: 700;
+    }
 
-        .calc-btn.secondary {
-            background: transparent;
-            border: 1px solid rgba(11, 18, 32, 0.06);
-            color: #374151;
-        }
+    .calc-btn.secondary {
+      background: transparent;
+      border: 1px solid rgba(11, 18, 32, 0.06);
+      color: #374151;
+    }
 
-        .calc-btn.primary {
-            background: #0f6fff;
-            color: #fff;
-            box-shadow: 0 10px 30px rgba(15, 111, 255, 0.12);
-        }
+    .calc-btn.primary {
+      background: #0f6fff;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(15, 111, 255, 0.12);
+    }
 
-        .calc-btn.whatsapp {
-            background: #25d366;
-            color: #fff;
-        }
+    .calc-btn.whatsapp {
+      background: #25d366;
+      color: #fff;
+    }
 
-        .summary-panel {
-            background: #fff;
-            border-radius: 12px;
-            padding: 0 !important;
-            border: 1px solid rgba(11, 18, 32, 0.06);
-        }
+    .summary-panel {
+      background: #fff;
+      border-radius: 12px;
+      padding: 0 !important;
+      border: 1px solid rgba(11, 18, 32, 0.06);
+    }
 
-        .summary-panel h3 {
-            margin-top: 0;
-            margin-bottom: 8px;
-        }
+    .summary-panel h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
 
-        .breakdown {
-            max-height: 300px;
-            overflow: auto;
-            margin-top: 8px;
-        }
+    .breakdown {
+      max-height: 300px;
+      overflow: auto;
+      margin-top: 8px;
+    }
 
-        .breakdown .row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 8px 20px;
-            border-bottom: 1px dashed rgba(11, 18, 32, 0.03);
-        }
+    .breakdown .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 20px;
+      border-bottom: 1px dashed rgba(11, 18, 32, 0.03);
+    }
 
-        .inclusions {
-            margin-top: 12px;
-            background: #fbfdff;
-            padding: 10px;
-            border-radius: 8px;
-            border: 1px dashed rgba(11, 18, 32, 0.04);
-            font-size: 13px;
-        }
+    .inclusions {
+      margin-top: 12px;
+      background: #fbfdff;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px dashed rgba(11, 18, 32, 0.04);
+      font-size: 13px;
+    }
 
-        .total {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px solid rgba(11, 18, 32, 0.06);
-            font-weight: 800;
-            font-size: 18px;
-            color: #0f6fff;
-        }
+    .total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(11, 18, 32, 0.06);
+      font-weight: 800;
+      font-size: 18px;
+      color: #0f6fff;
+    }
 
-        /* Sticky live total for desktop only */
-        .live-total {
-            padding: 12px;
-            border-radius: 10px;
-            background: #fff;
-            border: 1px solid rgba(11,18,32,0.06);
-            text-align:center;
-            font-weight:800;
-            font-size:18px;
-            margin-top: 12px;
-            position: relative; /* Default to relative for mobile */
-        }
+    /* Sticky live total for desktop only */
+    .live-total {
+      padding: 12px;
+      border-radius: 10px;
+      background: #fff;
+      border: 1px solid rgba(11, 18, 32, 0.06);
+      text-align: center;
+      font-weight: 800;
+      font-size: 18px;
+      margin-top: 12px;
+      position: relative;
+      /* Default to relative for mobile */
+    }
 
-        /* Mobile adjustments */
-        @media (max-width: 575px) {
-            .calc-wrap {
-                padding: 16px;
-            }
+    /* Mobile adjustments */
+    @media (max-width: 575px) {
+      .calc-wrap {
+        padding: 16px;
+      }
 
-            .live-total {
-                position: relative;
-                margin-top: 12px;
-                box-shadow: none; /* Remove shadow if not fixed */
-            }
+      .live-total {
+        position: relative;
+        margin-top: 12px;
+        box-shadow: none;
+        /* Remove shadow if not fixed */
+      }
 
-            .calc-grid {
-                gap: 12px;
-            }
+      .calc-grid {
+        gap: 12px;
+      }
 
-            .calc-btn {
-                padding: 8px 12px;
-                font-size: 14px;
-            }
+      .calc-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+      }
 
-            .summary-panel {
-                position: static;
-            }
-        }
+      .summary-panel {
+        position: static;
+      }
+    }
 
-        @media (min-width: 576px) and (max-width: 991px) {
-            .calc-wrap {
-                padding: 18px;
-            }
+    @media (min-width: 576px) and (max-width: 991px) {
+      .calc-wrap {
+        padding: 18px;
+      }
 
-            .live-total {
-                position: relative;
-                margin-top: 12px;
-            }
+      .live-total {
+        position: relative;
+        margin-top: 12px;
+      }
 
-            .summary-panel {
-                position: static;
-            }
-        }
+      .summary-panel {
+        position: static;
+      }
+    }
 
-        @media (min-width: 992px) {
-            .calc-grid {
-                grid-template-columns: 1fr 360px;
-                align-items: start;
-            }
+    @media (min-width: 992px) {
+      .calc-grid {
+        grid-template-columns: 1fr 360px;
+        align-items: start;
+      }
 
-            .calc-progress {
-                flex-direction: row;
-                justify-content: space-between;
-                gap: 6px;
-            }
+      .calc-progress {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 6px;
+      }
 
-            .calc-progress .step-pill {
-                flex-direction: column;
-                align-items: center;
-                font-size: 13px;
-                color: #6b7280;
-            }
+      .calc-progress .step-pill {
+        flex-direction: column;
+        align-items: center;
+        font-size: 13px;
+        color: #6b7280;
+      }
 
-            .calc-progress .step-pill .label {
-                font-size: 13px;
-                margin-top: 6px;
-            }
+      .calc-progress .step-pill .label {
+        font-size: 13px;
+        margin-top: 6px;
+      }
 
-            .summary-panel {
-                position: sticky;
-                top: 24px;
-            }
+      .summary-panel {
+        position: sticky;
+        top: 24px;
+      }
 
-            .live-total {
-                position: sticky;
-                top: 300px;
-            }
-        }
-    </style>
+      .live-total {
+        position: sticky;
+        top: 300px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZWB6CP2"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZWB6CP2" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-    <!-- Navbar Start -->
-    <div class="container-fluid nav-bar p-0">
-        <div class="container-lg p-0">
-            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
-                <a href="index.html" class="navbar-brand">
-                    <img src="/img/Generated_Image_September_14__2025_-_12_29AM-removebg-preview.png" alt="Logo de tu Empresa" style="max-height: 50px;">
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Servicios</a>
-                            <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="service.html" class="dropdown-item">Todos los servicios</a>
-                                <a href="inmobiliarias.html" class="dropdown-item">Webs para Inmobiliarias</a>
-                            </div>
-                        </div>
-                        <a href="pricing.html" class="nav-item nav-link active">Precios</a>
-                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Navbar End -->
-
-    <!-- Page Header Start -->
-    <div
-        class="container-fluid page-header d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5 mb-5">
-        <h1 class="display-4 text-white mb-3 mt-0 mt-lg-5">Precios</h1>
-        <div class="d-inline-flex text-white">
-            <p class="m-0"><a class="text-white" href="">Home</a></p>
-            <p class="m-0 px-2">/</p>
-            <p class="m-0">Precios</p>
-        </div>
-    </div>
-    <!-- Page Header End -->
-
-    <!-- Pricing Plan Start -->
-    <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="row borderradius">
-                        <div class="col-md-6 mb-5 borderradius">
-                            <div class="d-flex flex-column align-items-center justify-content-center bg-primary p-4 borderradius">
-                                <h3 class="whiteh1">Desde</h3>
-                                <h1 class="display-4 mb-0 whiteh1">
-                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">$MN</small>3,900
-                                </h1>
-                            </div>
-                            <div class="border border-top-0 d-flex flex-column align-items-center py-4 borderradius">
-                                <p>✔️ Landing page</p>
-                                <p>✔️ Entrega en 3 días</p>
-                                <p>✔️ Formulario inteligente</p>
-                                <p>✔️ Soporte</p>
-                                <a href="https://wa.me/525623229505?text=Hola,%20quiero%20un%20presupuesto..." class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Contacta por WhatsApp</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-5 borderradius">
-                            <div class="d-flex flex-column align-items-center justify-content-center bg-primary p-4 borderradius">
-                                <h3 class="whiteh1">Desde</h3>
-                                <h1 class="display-4 mb-0 whiteh1">
-                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">$MN</small>9,900
-                                </h1>
-                            </div>
-                            <div class="border border-top-0 d-flex flex-column align-items-center py-4 borderradius">
-                                <p>✔️ Varias pages</p>
-                                <p>✔️ Entrega en 7 días</p>
-                                <p>✔️ Formularios</p>
-                                <p>✔️ Sistema de reservas</p>
-                                <p>✔️ Email marketing</p>
-                                <p>✔️ Soporte</p>
-                                <a href="https://wa.me/525623229505?text=Hola,%20quiero%20un%20presupuesto..." class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Contacta por WhatsApp</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 mb-5">
-                    <small class="d-inline bg-primary text-white text-uppercase font-weight-bold px-1">Nuestros precios</small>
-                    <h1 class="mt-2 mb-3">Si encuentras algo más barato cerraremos el negocio</h1>
-                    <h4 class="font-weight-normal text-muted mb-4">Arranca tu proyecto desde precios asequibles, ya sea para tu portfolio, negocio, anuncio o lo que necesites.</h4>
-                    <h5 class="font-weight-bold mb-4">¿Necesitas algo personalizado?</h5>
-                    <a href="contact.html" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Agenda llamada</a>
-                </div>
+  <!-- Navbar Start -->
+  <div class="container-fluid nav-bar p-0">
+    <div class="container-lg p-0">
+      <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+        <a href="index.html" class="navbar-brand">
+          <img src="/img/Generated_Image_September_14__2025_-_12_29AM-removebg-preview.png" alt="Logo de tu Empresa"
+            style="max-height: 50px;">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+          <div class="navbar-nav ml-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Servicios</a>
+              <div class="dropdown-menu border-0 rounded-0 m-0">
+                <a href="service.html" class="dropdown-item">Todos los servicios</a>
+                <a href="inmobiliarias.html" class="dropdown-item">Webs para Inmobiliarias</a>
+                <a href="artistas.html" class="dropdown-item">Webs para Artistas</a>
+                <a href="bodas.html" class="dropdown-item">Webs para Bodas</a>
+              </div>
             </div>
+            <a href="pricing.html" class="nav-item nav-link active">Precios</a>
+            <a href="contact.html" class="nav-item nav-link">Contacto</a>
+          </div>
         </div>
+      </nav>
     </div>
-    <!-- Pricing Plan End -->
+  </div>
+  <!-- Navbar End -->
 
-    <!-- 🚀 Calculadora Cotización Start -->
-    <div class="calc-wrap" aria-label="Calculadora de cotizaciones" id="calc">
-        <div class="text-center mb-5">
-            <h1 class="mt-2 mb-3">Cotiza tu proyecto</h1>
-        </div>
-        <div class="calc-grid">
-            <!-- Left: steps -->
-            <div class="calc-steps">
-                <div class="calc-progress" role="tablist" aria-label="Progreso calculadora">
-                    <div class="step-pill active" data-step="1" aria-current="step">
-                        <div class="dot">1</div>
-                        <div class="label">Servicio</div>
-                    </div>
-                    <div class="step-pill" data-step="2">
-                        <div class="dot">2</div>
-                        <div class="label">Configuración</div>
-                    </div>
-                    <div class="step-pill" data-step="3">
-                        <div class="dot">3</div>
-                        <div class="label">Extras</div>
-                    </div>
-                    <div class="step-pill" data-step="4">
-                        <div class="dot">4</div>
-                        <div class="label">Resumen</div>
-                    </div>
-                </div>
+  <!-- Page Header Start -->
+  <div
+    class="container-fluid page-header d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5 mb-5">
+    <h1 class="display-4 text-white mb-3 mt-0 mt-lg-5">Precios</h1>
+    <div class="d-inline-flex text-white">
+      <p class="m-0"><a class="text-white" href="">Home</a></p>
+      <p class="m-0 px-2">/</p>
+      <p class="m-0">Precios</p>
+    </div>
+  </div>
+  <!-- Page Header End -->
 
-                <!-- Steps content -->
-                <div style="margin-top:10px;">
-                    <!-- STEP 1 -->
-                    <div class="calc-step active" id="step-1">
-                        <div class="mini-view">
-                            <label style="font-weight:700">Tipo de servicio</label>
-                            <div class="options-grid" id="serviceOptions">
-                                <div class="option" data-value="landing" role="button" tabindex="0">
-                                    <div>
-                                        <div style="font-weight:700">Landing Page</div>
-                                        <div style="font-size:13px;color:#6b7280">Rápida y enfocada en captación</div>
-                                    </div>
-                                    <div style="text-align:right">
-                                        <div style="font-weight:700;color:#0f6fff">$4,000 / $6,000</div>
-                                        <div style="font-size:12px;color:#6b7280">Agregar a web / Desde cero</div>
-                                    </div>
-                                </div>
-                                <div class="option" data-value="web" role="button" tabindex="0">
-                                    <div>
-                                        <div style="font-weight:700">Página Web Completa</div>
-                                        <div style="font-size:13px;color:#6b7280">Home, Contacto, Servicios, etc.</div>
-                                    </div>
-                                    <div style="text-align:right">
-                                        <div style="font-weight:700;color:#0f6fff">$10,000 / $16,000</div>
-                                        <div style="font-size:12px;color:#6b7280">Estática / E-commerce</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="calc-controls">
-                            <div></div>
-                            <button class="calc-btn primary" id="next-1">Siguiente →</button>
-                        </div>
-                    </div>
-
-                    <!-- STEP 2 -->
-                    <div class="calc-step" id="step-2">
-                        <div class="mini-view">
-                            <label style="font-weight:700">Configuración inicial</label>
-                            <div id="configOptions"></div>
-                            <div id="pagesContainer" style="margin-top:10px; display:none;">
-                                <label style="font-weight:700">Número de páginas (solo para Páginas Web)</label>
-                                <input type="number" id="pagesCount" value="4" min="1" style="width:120px;padding:8px;border-radius:8px;border:1px solid #e6e6e6;">
-                                <div style="font-size:13px;color:#6b7280;margin-top:6px;">Usa esto para calcular integraciones por página.</div>
-                            </div>
-                        </div>
-                        <div class="calc-controls">
-                            <button class="calc-btn secondary" id="back-2">← Atrás</button>
-                            <button class="calc-btn primary" id="next-2">Siguiente →</button>
-                        </div>
-                    </div>
-
-                    <!-- STEP 3 -->
-                    <div class="calc-step" id="step-3">
-                        <div class="mini-view">
-                            <label style="font-weight:700">Extras</label>
-                            <div id="extrasList"></div>
-                            <div class="inclusions">
-                                <strong>Inclusiones (sin costo):</strong>
-                                <div class="tiny muted">Secciones de plantilla, Optimización SEO básica, Subida a producción con dominio personalizado, Soporte inicial.</div>
-                            </div>
-                            <div style="margin-top:10px;font-size:13px;color:#6b7280;">
-                                <strong>Regla de descuento progresivo:</strong> Primer extra 5%, segundo 10%, tercer 15%, cuarto+ 20% (aplica a cada extra individual según orden de selección).
-                            </div>
-                        </div>
-                        <div class="calc-controls">
-                            <button class="calc-btn secondary" id="back-3">← Atrás</button>
-                            <button class="calc-btn primary" id="next-3">Siguiente →</button>
-                        </div>
-                    </div>
-
-                    <!-- STEP 4 -->
-                    <div class="calc-step" id="step-4">
-                        <div class="mini-view">
-                            <h3 style="margin-top:0">Presupuesto final</h3>
-                            <div id="finalBreakdown"></div>
-                            <div class="inclusions" style="margin-top:10px;">
-                                <strong>Inclusiones (sin costo):</strong>
-                                <div class="tiny muted">Secciones de plantilla, Optimización SEO básica, Subida a producción con dominio personalizado, Soporte inicial.</div>
-                            </div>
-                        </div>
-                        <div class="calc-controls" style="margin-top:12px;">
-                            <button class="calc-btn secondary" id="back-4">← Atrás</button>
-                            <button class="calc-btn whatsapp" id="sendWhatsApp"><i class="fab fa-whatsapp"></i> Enviar por WhatsApp</button>
-                        </div>
-                    </div>
-                </div>
+  <!-- Pricing Plan Start -->
+  <div class="container-fluid pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="row borderradius">
+            <div class="col-md-6 mb-5 borderradius">
+              <div class="d-flex flex-column align-items-center justify-content-center bg-primary p-4 borderradius">
+                <h3 class="whiteh1">Desde</h3>
+                <h1 class="display-4 mb-0 whiteh1">
+                  <small class="align-top" style="font-size: 22px; line-height: 45px;">$MN</small>3,900
+                </h1>
+              </div>
+              <div class="border border-top-0 d-flex flex-column align-items-center py-4 borderradius">
+                <p>✔️ Landing page</p>
+                <p>✔️ Entrega en 3 días</p>
+                <p>✔️ Formulario inteligente</p>
+                <p>✔️ Soporte</p>
+                <a href="https://wa.me/525623229505?text=Hola,%20quiero%20un%20presupuesto..." class="btn btn-whatsapp"
+                  target="_blank"><i class="fab fa-whatsapp"></i> Contacta por WhatsApp</a>
+              </div>
             </div>
-
-            <!-- Right: resumen / total -->
-            <aside>
-                <div class="summary-panel">
-                    <h3>Resumen en tiempo real</h3>
-                    <div style="display:flex;justify-content:space-between;margin-bottom:6px;max-width:100%;"><div class="small-muted">Servicio</div><div id="resService" class="small-muted">—</div></div>
-                    <div style="display:flex;justify-content:space-between;margin-bottom:6px;"><div class="small-muted">Base</div><div id="resBase" class="small-muted">$0 MXN</div></div>
-                    <div style="margin-top:8px;"><strong>Extras (con descuento)</strong></div>
-                    <div class="breakdown" id="resExtras">
-                        <div class="tiny muted">Sin extras seleccionados</div>
-                    </div>
-                    <div style="display:flex;justify-content:space-between;margin-top:8px;"><div class="small-muted">Subtotal</div><div id="resSubtotal" class="small-muted">$0 MXN</div></div>
-                    <div class="total"><div>Total</div><div id="resTotal">$0 MXN</div></div>
-                </div>
-                <div class="live-total">
-                    <div style="font-size:13px;color:#6b7280;">Total actual</div>
-                    <div id="liveTotal" style="font-size:20px;color:#0f6fff;">$0 MXN</div>
-                </div>
-            </aside>
+            <div class="col-md-6 mb-5 borderradius">
+              <div class="d-flex flex-column align-items-center justify-content-center bg-primary p-4 borderradius">
+                <h3 class="whiteh1">Desde</h3>
+                <h1 class="display-4 mb-0 whiteh1">
+                  <small class="align-top" style="font-size: 22px; line-height: 45px;">$MN</small>9,900
+                </h1>
+              </div>
+              <div class="border border-top-0 d-flex flex-column align-items-center py-4 borderradius">
+                <p>✔️ Varias pages</p>
+                <p>✔️ Entrega en 7 días</p>
+                <p>✔️ Formularios</p>
+                <p>✔️ Sistema de reservas</p>
+                <p>✔️ Email marketing</p>
+                <p>✔️ Soporte</p>
+                <a href="https://wa.me/525623229505?text=Hola,%20quiero%20un%20presupuesto..." class="btn btn-whatsapp"
+                  target="_blank"><i class="fab fa-whatsapp"></i> Contacta por WhatsApp</a>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="col-lg-5 mb-5">
+          <small class="d-inline bg-primary text-white text-uppercase font-weight-bold px-1">Nuestros precios</small>
+          <h1 class="mt-2 mb-3">Si encuentras algo más barato cerraremos el negocio</h1>
+          <h4 class="font-weight-normal text-muted mb-4">Arranca tu proyecto desde precios asequibles, ya sea para tu
+            portfolio, negocio, anuncio o lo que necesites.</h4>
+          <h5 class="font-weight-bold mb-4">¿Necesitas algo personalizado?</h5>
+          <a href="contact.html" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Agenda llamada</a>
+        </div>
+      </div>
     </div>
-    <!-- 🚀 Calculadora Cotización End -->
+  </div>
+  <!-- Pricing Plan End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid py-4 px-sm-3 px-md-5">
-        <p class="m-0 text-center">
-            &copy; <a class="font-weight-semi-bold" href="#">Automato Agency</a>. All Rights Reserved. Designed by
-            <a class="font-weight-semi-bold" href="/index.html">Automato Agency</a>
-        </p>
+  <!-- 🚀 Calculadora Cotización Start -->
+  <div class="calc-wrap" aria-label="Calculadora de cotizaciones" id="calc">
+    <div class="text-center mb-5">
+      <h1 class="mt-2 mb-3">Cotiza tu proyecto</h1>
     </div>
-    <!-- Footer End -->
+    <div class="calc-grid">
+      <!-- Left: steps -->
+      <div class="calc-steps">
+        <div class="calc-progress" role="tablist" aria-label="Progreso calculadora">
+          <div class="step-pill active" data-step="1" aria-current="step">
+            <div class="dot">1</div>
+            <div class="label">Servicio</div>
+          </div>
+          <div class="step-pill" data-step="2">
+            <div class="dot">2</div>
+            <div class="label">Configuración</div>
+          </div>
+          <div class="step-pill" data-step="3">
+            <div class="dot">3</div>
+            <div class="label">Extras</div>
+          </div>
+          <div class="step-pill" data-step="4">
+            <div class="dot">4</div>
+            <div class="label">Resumen</div>
+          </div>
+        </div>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-up"></i></a>
+        <!-- Steps content -->
+        <div style="margin-top:10px;">
+          <!-- STEP 1 -->
+          <div class="calc-step active" id="step-1">
+            <div class="mini-view">
+              <label style="font-weight:700">Tipo de servicio</label>
+              <div class="options-grid" id="serviceOptions">
+                <div class="option" data-value="landing" role="button" tabindex="0">
+                  <div>
+                    <div style="font-weight:700">Landing Page</div>
+                    <div style="font-size:13px;color:#6b7280">Rápida y enfocada en captación</div>
+                  </div>
+                  <div style="text-align:right">
+                    <div style="font-weight:700;color:#0f6fff">$4,000 / $6,000</div>
+                    <div style="font-size:12px;color:#6b7280">Agregar a web / Desde cero</div>
+                  </div>
+                </div>
+                <div class="option" data-value="web" role="button" tabindex="0">
+                  <div>
+                    <div style="font-weight:700">Página Web Completa</div>
+                    <div style="font-size:13px;color:#6b7280">Home, Contacto, Servicios, etc.</div>
+                  </div>
+                  <div style="text-align:right">
+                    <div style="font-weight:700;color:#0f6fff">$10,000 / $16,000</div>
+                    <div style="font-size:12px;color:#6b7280">Estática / E-commerce</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-controls">
+              <div></div>
+              <button class="calc-btn primary" id="next-1">Siguiente →</button>
+            </div>
+          </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+          <!-- STEP 2 -->
+          <div class="calc-step" id="step-2">
+            <div class="mini-view">
+              <label style="font-weight:700">Configuración inicial</label>
+              <div id="configOptions"></div>
+              <div id="pagesContainer" style="margin-top:10px; display:none;">
+                <label style="font-weight:700">Número de páginas (solo para Páginas Web)</label>
+                <input type="number" id="pagesCount" value="4" min="1"
+                  style="width:120px;padding:8px;border-radius:8px;border:1px solid #e6e6e6;">
+                <div style="font-size:13px;color:#6b7280;margin-top:6px;">Usa esto para calcular integraciones por
+                  página.</div>
+              </div>
+            </div>
+            <div class="calc-controls">
+              <button class="calc-btn secondary" id="back-2">← Atrás</button>
+              <button class="calc-btn primary" id="next-2">Siguiente →</button>
+            </div>
+          </div>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+          <!-- STEP 3 -->
+          <div class="calc-step" id="step-3">
+            <div class="mini-view">
+              <label style="font-weight:700">Extras</label>
+              <div id="extrasList"></div>
+              <div class="inclusions">
+                <strong>Inclusiones (sin costo):</strong>
+                <div class="tiny muted">Secciones de plantilla, Optimización SEO básica, Subida a producción con dominio
+                  personalizado, Soporte inicial.</div>
+              </div>
+              <div style="margin-top:10px;font-size:13px;color:#6b7280;">
+                <strong>Regla de descuento progresivo:</strong> Primer extra 5%, segundo 10%, tercer 15%, cuarto+ 20%
+                (aplica a cada extra individual según orden de selección).
+              </div>
+            </div>
+            <div class="calc-controls">
+              <button class="calc-btn secondary" id="back-3">← Atrás</button>
+              <button class="calc-btn primary" id="next-3">Siguiente →</button>
+            </div>
+          </div>
 
-    <!-- ====== Script completo de la calculadora (lógica y UI) ====== -->
-    <script>
-        /* ---------- Datos de precios (MXN) ---------- */
-        const PRICES = {
-          landing: {
-            existing: 4000,
-            fromZero: 6000,
-            extras: {
-              ga: 1000,
-              ads: 1000,
-              tagManager: 1000,
-              smartForm: 2000,
-              calendar: 2000,
-              chatbot: 3000
-            }
-          },
-          web: {
-            static: 10000,
-            ecommerce: 16000,
-            extras: {
-              paymentGateway: 4000,
-              gallery: 4000,
-              blog: 4000,
-              integrationPerPage: 1000,
-              smartForm: 2000,
-              calendar: 2000,
-              chatbot: 3000
-            }
-          }
-        };
+          <!-- STEP 4 -->
+          <div class="calc-step" id="step-4">
+            <div class="mini-view">
+              <h3 style="margin-top:0">Presupuesto final</h3>
+              <div id="finalBreakdown"></div>
+              <div class="inclusions" style="margin-top:10px;">
+                <strong>Inclusiones (sin costo):</strong>
+                <div class="tiny muted">Secciones de plantilla, Optimización SEO básica, Subida a producción con dominio
+                  personalizado, Soporte inicial.</div>
+              </div>
+            </div>
+            <div class="calc-controls" style="margin-top:12px;">
+              <button class="calc-btn secondary" id="back-4">← Atrás</button>
+              <button class="calc-btn whatsapp" id="sendWhatsApp"><i class="fab fa-whatsapp"></i> Enviar por
+                WhatsApp</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        /* descuentos progresivos por orden de selección de extras (aplica solo a extras) */
-        const DISCOUNTS = [0.05, 0.10, 0.15, 0.20];
+      <!-- Right: resumen / total -->
+      <aside>
+        <div class="summary-panel">
+          <h3>Resumen en tiempo real</h3>
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px;max-width:100%;">
+            <div class="small-muted">Servicio</div>
+            <div id="resService" class="small-muted">—</div>
+          </div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+            <div class="small-muted">Base</div>
+            <div id="resBase" class="small-muted">$0 MXN</div>
+          </div>
+          <div style="margin-top:8px;"><strong>Extras (con descuento)</strong></div>
+          <div class="breakdown" id="resExtras">
+            <div class="tiny muted">Sin extras seleccionados</div>
+          </div>
+          <div style="display:flex;justify-content:space-between;margin-top:8px;">
+            <div class="small-muted">Subtotal</div>
+            <div id="resSubtotal" class="small-muted">$0 MXN</div>
+          </div>
+          <div class="total">
+            <div>Total</div>
+            <div id="resTotal">$0 MXN</div>
+          </div>
+        </div>
+        <div class="live-total">
+          <div style="font-size:13px;color:#6b7280;">Total actual</div>
+          <div id="liveTotal" style="font-size:20px;color:#0f6fff;">$0 MXN</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <!-- 🚀 Calculadora Cotización End -->
 
-        /* Estado */
-        const state = {
-          service: null,
-          landingFrom: null,
-          webType: null,
-          pagesCount: 4,
-          extrasSelectedOrder: [],
-          extrasChecked: {},
-          contact: { name: '', email: '', notes: '' }
-        };
+  <!-- Footer Start -->
+  <div class="container-fluid py-4 px-sm-3 px-md-5">
+    <p class="m-0 text-center">
+      &copy; <a class="font-weight-semi-bold" href="#">Automato Agency</a>. All Rights Reserved. Designed by
+      <a class="font-weight-semi-bold" href="/index.html">Automato Agency</a>
+    </p>
+  </div>
+  <!-- Footer End -->
 
-        /* Helper: format currency (MXN) */
-        function fmt(n) { return '$' + Number(n).toLocaleString('es-MX') + ' MXN'; }
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-up"></i></a>
 
-        /* ---------- UI refs ---------- */
-        const stepPills = document.querySelectorAll('.step-pill');
-        const calcSteps = document.querySelectorAll('.calc-step');
-        const serviceOptions = document.getElementById('serviceOptions');
-        const configOptions = document.getElementById('configOptions');
-        const extrasList = document.getElementById('extrasList');
-        const pagesContainer = document.getElementById('pagesContainer');
-        const pagesCountInput = document.getElementById('pagesCount');
-        const resService = document.getElementById('resService');
-        const resBase = document.getElementById('resBase');
-        const resExtras = document.getElementById('resExtras');
-        const resSubtotal = document.getElementById('resSubtotal');
-        const resTotal = document.getElementById('resTotal');
-        const liveTotal = document.getElementById('liveTotal');
-        const finalBreakdown = document.getElementById('finalBreakdown');
-        const telefono = '525623229505';
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-        /* ---------- Initial render of service options (interactive clickable cards) ---------- */
-        document.querySelectorAll('#serviceOptions .option').forEach(el => {
-          el.addEventListener('click', () => {
-            const val = el.getAttribute('data-value');
-            selectService(val);
-          });
-          el.addEventListener('keydown', (e) => { if (e.key === 'Enter') el.click(); });
-        });
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 
-        /* Programmatic selection helpers for the two big service cards */
-        function selectService(name) {
-          state.service = name;
-          document.querySelectorAll('#serviceOptions .option').forEach(o => o.classList.toggle('active', o.getAttribute('data-value') === name));
-          if (name === 'landing') {
-            state.landingFrom = state.landingFrom || 'existing';
-            state.webType = null;
-            pagesContainer.style.display = 'none';
-          } else {
-            state.webType = state.webType || 'static';
-            state.landingFrom = null;
-            pagesContainer.style.display = 'block';
-          }
-          renderConfigOptions();
-          renderExtras();
-          recalc();
+  <!-- ====== Script completo de la calculadora (lógica y UI) ====== -->
+  <script>
+    /* ---------- Datos de precios (MXN) ---------- */
+    const PRICES = {
+      landing: {
+        existing: 4000,
+        fromZero: 6000,
+        extras: {
+          ga: 1000,
+          ads: 1000,
+          tagManager: 1000,
+          smartForm: 2000,
+          calendar: 2000,
+          chatbot: 3000
         }
+      },
+      web: {
+        static: 10000,
+        ecommerce: 16000,
+        extras: {
+          paymentGateway: 4000,
+          gallery: 4000,
+          blog: 4000,
+          integrationPerPage: 1000,
+          smartForm: 2000,
+          calendar: 2000,
+          chatbot: 3000
+        }
+      }
+    };
 
-        /* Render configuration radio options based on selected service */
-        function renderConfigOptions() {
-          configOptions.innerHTML = '';
-          if (state.service === 'landing') {
-            configOptions.innerHTML = `
+    /* descuentos progresivos por orden de selección de extras (aplica solo a extras) */
+    const DISCOUNTS = [0.05, 0.10, 0.15, 0.20];
+
+    /* Estado */
+    const state = {
+      service: null,
+      landingFrom: null,
+      webType: null,
+      pagesCount: 4,
+      extrasSelectedOrder: [],
+      extrasChecked: {},
+      contact: { name: '', email: '', notes: '' }
+    };
+
+    /* Helper: format currency (MXN) */
+    function fmt(n) { return '$' + Number(n).toLocaleString('es-MX') + ' MXN'; }
+
+    /* ---------- UI refs ---------- */
+    const stepPills = document.querySelectorAll('.step-pill');
+    const calcSteps = document.querySelectorAll('.calc-step');
+    const serviceOptions = document.getElementById('serviceOptions');
+    const configOptions = document.getElementById('configOptions');
+    const extrasList = document.getElementById('extrasList');
+    const pagesContainer = document.getElementById('pagesContainer');
+    const pagesCountInput = document.getElementById('pagesCount');
+    const resService = document.getElementById('resService');
+    const resBase = document.getElementById('resBase');
+    const resExtras = document.getElementById('resExtras');
+    const resSubtotal = document.getElementById('resSubtotal');
+    const resTotal = document.getElementById('resTotal');
+    const liveTotal = document.getElementById('liveTotal');
+    const finalBreakdown = document.getElementById('finalBreakdown');
+    const telefono = '525623229505';
+
+    /* ---------- Initial render of service options (interactive clickable cards) ---------- */
+    document.querySelectorAll('#serviceOptions .option').forEach(el => {
+      el.addEventListener('click', () => {
+        const val = el.getAttribute('data-value');
+        selectService(val);
+      });
+      el.addEventListener('keydown', (e) => { if (e.key === 'Enter') el.click(); });
+    });
+
+    /* Programmatic selection helpers for the two big service cards */
+    function selectService(name) {
+      state.service = name;
+      document.querySelectorAll('#serviceOptions .option').forEach(o => o.classList.toggle('active', o.getAttribute('data-value') === name));
+      if (name === 'landing') {
+        state.landingFrom = state.landingFrom || 'existing';
+        state.webType = null;
+        pagesContainer.style.display = 'none';
+      } else {
+        state.webType = state.webType || 'static';
+        state.landingFrom = null;
+        pagesContainer.style.display = 'block';
+      }
+      renderConfigOptions();
+      renderExtras();
+      recalc();
+    }
+
+    /* Render configuration radio options based on selected service */
+    function renderConfigOptions() {
+      configOptions.innerHTML = '';
+      if (state.service === 'landing') {
+        configOptions.innerHTML = `
               <label class="option opt-config" data-value="existing">
                 <div><input type="radio" name="config" value="existing"> <strong>Añadir a web existente</strong><div class="tiny muted">$4,000 MXN</div></div>
                 <div style="font-weight:700;color:#0f6fff">$4,000</div>
@@ -674,15 +705,15 @@
                 <div style="font-weight:700;color:#0f6fff">$6,000</div>
               </label>
             `;
-            setTimeout(() => {
-              if (state.landingFrom) {
-                const chosen = document.querySelector(`[name="config"][value="${state.landingFrom}"]`);
-                if (chosen) chosen.checked = true;
-                document.querySelectorAll('.opt-config').forEach(el => el.classList.toggle('active', el.getAttribute('data-value') === state.landingFrom));
-              }
-            }, 40);
-          } else if (state.service === 'web') {
-            configOptions.innerHTML = `
+        setTimeout(() => {
+          if (state.landingFrom) {
+            const chosen = document.querySelector(`[name="config"][value="${state.landingFrom}"]`);
+            if (chosen) chosen.checked = true;
+            document.querySelectorAll('.opt-config').forEach(el => el.classList.toggle('active', el.getAttribute('data-value') === state.landingFrom));
+          }
+        }, 40);
+      } else if (state.service === 'web') {
+        configOptions.innerHTML = `
               <label class="option opt-config" data-value="static">
                 <div><input type="radio" name="config" value="static"> <strong>Web estática</strong><div class="tiny muted">$10,000 MXN</div></div>
                 <div style="font-weight:700;color:#0f6fff">$10,000</div>
@@ -692,54 +723,54 @@
                 <div style="font-weight:700;color:#0f6fff">$16,000</div>
               </label>
             `;
-            setTimeout(() => {
-              if (state.webType) {
-                const chosen = document.querySelector(`[name="config"][value="${state.webType}"]`);
-                if (chosen) chosen.checked = true;
-                document.querySelectorAll('.opt-config').forEach(el => el.classList.toggle('active', el.getAttribute('data-value') === state.webType));
-              }
-            }, 40);
+        setTimeout(() => {
+          if (state.webType) {
+            const chosen = document.querySelector(`[name="config"][value="${state.webType}"]`);
+            if (chosen) chosen.checked = true;
+            document.querySelectorAll('.opt-config').forEach(el => el.classList.toggle('active', el.getAttribute('data-value') === state.webType));
           }
-          document.querySelectorAll('.opt-config').forEach(el => {
-            el.addEventListener('click', () => {
-              const v = el.getAttribute('data-value');
-              if (state.service === 'landing') {
-                state.landingFrom = v;
-              } else {
-                state.webType = v;
-              }
-              document.querySelectorAll('.opt-config').forEach(x => x.classList.toggle('active', x === el));
-              pagesContainer.style.display = (state.service === 'web') ? 'block' : 'none';
-              recalc();
-            });
-          });
-        }
+        }, 40);
+      }
+      document.querySelectorAll('.opt-config').forEach(el => {
+        el.addEventListener('click', () => {
+          const v = el.getAttribute('data-value');
+          if (state.service === 'landing') {
+            state.landingFrom = v;
+          } else {
+            state.webType = v;
+          }
+          document.querySelectorAll('.opt-config').forEach(x => x.classList.toggle('active', x === el));
+          pagesContainer.style.display = (state.service === 'web') ? 'block' : 'none';
+          recalc();
+        });
+      });
+    }
 
-        /* Extras metadata and rendering */
-        const EXTRAS_META = [
-          { id: 'ga', label: 'Integración Google Analytics', price: PRICES.landing.extras.ga, appliesTo: ['landing'] },
-          { id: 'ads', label: 'Integración Google Ads', price: PRICES.landing.extras.ads, appliesTo: ['landing'] },
-          { id: 'tagManager', label: 'Integración Tag Manager', price: PRICES.landing.extras.tagManager, appliesTo: ['landing'] },
-          { id: 'smartForm', label: 'Formulario inteligente (cualificación de leads)', price: PRICES.landing.extras.smartForm, appliesTo: ['landing', 'web'] },
-          { id: 'calendar', label: 'Calendario para agendar reuniones', price: PRICES.landing.extras.calendar, appliesTo: ['landing', 'web'] },
-          { id: 'chatbot', label: 'Chatbot inteligente', price: PRICES.landing.extras.chatbot, appliesTo: ['landing', 'web'] },
-          { id: 'integrationPerPage', label: 'Integraciones Google (por página) - $1000/página', price: PRICES.web.extras.integrationPerPage, appliesTo: ['web'] },
-          { id: 'gallery', label: 'Galería personalizada', price: PRICES.web.extras.gallery, appliesTo: ['web'] },
-          { id: 'blog', label: 'Creación de blog', price: PRICES.web.extras.blog, appliesTo: ['web'] },
-          { id: 'paymentGateway', label: 'Pasarela de pago (solo e-commerce)', price: PRICES.web.extras.paymentGateway, appliesTo: ['web'] }
-        ];
+    /* Extras metadata and rendering */
+    const EXTRAS_META = [
+      { id: 'ga', label: 'Integración Google Analytics', price: PRICES.landing.extras.ga, appliesTo: ['landing'] },
+      { id: 'ads', label: 'Integración Google Ads', price: PRICES.landing.extras.ads, appliesTo: ['landing'] },
+      { id: 'tagManager', label: 'Integración Tag Manager', price: PRICES.landing.extras.tagManager, appliesTo: ['landing'] },
+      { id: 'smartForm', label: 'Formulario inteligente (cualificación de leads)', price: PRICES.landing.extras.smartForm, appliesTo: ['landing', 'web'] },
+      { id: 'calendar', label: 'Calendario para agendar reuniones', price: PRICES.landing.extras.calendar, appliesTo: ['landing', 'web'] },
+      { id: 'chatbot', label: 'Chatbot inteligente', price: PRICES.landing.extras.chatbot, appliesTo: ['landing', 'web'] },
+      { id: 'integrationPerPage', label: 'Integraciones Google (por página) - $1000/página', price: PRICES.web.extras.integrationPerPage, appliesTo: ['web'] },
+      { id: 'gallery', label: 'Galería personalizada', price: PRICES.web.extras.gallery, appliesTo: ['web'] },
+      { id: 'blog', label: 'Creación de blog', price: PRICES.web.extras.blog, appliesTo: ['web'] },
+      { id: 'paymentGateway', label: 'Pasarela de pago (solo e-commerce)', price: PRICES.web.extras.paymentGateway, appliesTo: ['web'] }
+    ];
 
-        function renderExtras() {
-          extrasList.innerHTML = '';
-          EXTRAS_META.forEach(m => {
-            const applies = (state.service && m.appliesTo.includes(state.service));
-            if (!applies) return;
-            const disabled = (m.id === 'paymentGateway' && state.webType !== 'ecommerce');
-            const html = document.createElement('div');
-            html.className = 'option';
-            html.setAttribute('data-id', m.id);
-            if (disabled) html.style.opacity = 0.6;
-            html.innerHTML = `
+    function renderExtras() {
+      extrasList.innerHTML = '';
+      EXTRAS_META.forEach(m => {
+        const applies = (state.service && m.appliesTo.includes(state.service));
+        if (!applies) return;
+        const disabled = (m.id === 'paymentGateway' && state.webType !== 'ecommerce');
+        const html = document.createElement('div');
+        html.className = 'option';
+        html.setAttribute('data-id', m.id);
+        if (disabled) html.style.opacity = 0.6;
+        html.innerHTML = `
               <div>
                 <div style="font-weight:700">${m.label}</div>
                 <div class="tiny muted">${m.id === 'integrationPerPage' ? 'Costo multiplicado por número de páginas' : ''}</div>
@@ -749,308 +780,309 @@
                 <div style="margin-top:6px"><input type="checkbox" ${disabled ? 'disabled' : ''} data-id="${m.id}"></div>
               </div>
             `;
-            extrasList.appendChild(html);
-            const chk = html.querySelector('input[type="checkbox"]');
-            chk.addEventListener('change', (e) => {
-              handleExtraToggle(m.id, e.target.checked);
-            });
-            html.addEventListener('click', (ev) => {
-              if (disabled) return;
-              if (ev.target.tagName === 'INPUT') return;
-              chk.checked = !chk.checked;
-              chk.dispatchEvent(new Event('change'));
-            });
-          });
-        }
-
-        /* Handle extra toggle with order tracking */
-        function handleExtraToggle(id, checked) {
-          if (checked) {
-            if (!state.extrasChecked[id]) {
-              state.extrasSelectedOrder.push(id);
-            }
-            state.extrasChecked[id] = true;
-          } else {
-            state.extrasChecked[id] = false;
-            state.extrasSelectedOrder = state.extrasSelectedOrder.filter(x => x !== id);
-          }
-          recalc();
-        }
-
-        /* pages count */
-        pagesCountInput.addEventListener('input', (e) => {
-          const val = parseInt(e.target.value) || 1;
-          state.pagesCount = Math.max(1, val);
-          recalc();
+        extrasList.appendChild(html);
+        const chk = html.querySelector('input[type="checkbox"]');
+        chk.addEventListener('change', (e) => {
+          handleExtraToggle(m.id, e.target.checked);
         });
+        html.addEventListener('click', (ev) => {
+          if (disabled) return;
+          if (ev.target.tagName === 'INPUT') return;
+          chk.checked = !chk.checked;
+          chk.dispatchEvent(new Event('change'));
+        });
+      });
+    }
 
-        /* --- Core recalc function --- */
-        function recalc() {
-          let base = 0;
-          let serviceLabel = '—';
-          if (state.service === 'landing') {
-            serviceLabel = 'Landing Page';
-            if (state.landingFrom === 'existing') base = PRICES.landing.existing;
-            else if (state.landingFrom === 'fromZero') base = PRICES.landing.fromZero;
-          } else if (state.service === 'web') {
-            serviceLabel = (state.webType === 'ecommerce') ? 'E-commerce' : 'Página Web (estática)';
-            if (state.webType === 'static') base = PRICES.web.static;
-            else if (state.webType === 'ecommerce') base = PRICES.web.ecommerce;
-          }
+    /* Handle extra toggle with order tracking */
+    function handleExtraToggle(id, checked) {
+      if (checked) {
+        if (!state.extrasChecked[id]) {
+          state.extrasSelectedOrder.push(id);
+        }
+        state.extrasChecked[id] = true;
+      } else {
+        state.extrasChecked[id] = false;
+        state.extrasSelectedOrder = state.extrasSelectedOrder.filter(x => x !== id);
+      }
+      recalc();
+    }
 
-          const appliedExtras = [];
-          let extrasTotal = 0;
-          state.extrasSelectedOrder.forEach((id, idx) => {
-            if (!state.extrasChecked[id]) return;
-            let original = 0;
-            if (id === 'integrationPerPage') {
-              original = PRICES.web.extras.integrationPerPage * (state.pagesCount || 1);
-            } else if (id === 'ga' || id === 'ads' || id === 'tagManager') {
-              original = PRICES.landing.extras.ga;
-            } else if (id === 'smartForm') {
-              original = (state.service === 'web') ? PRICES.web.extras.smartForm : PRICES.landing.extras.smartForm;
-            } else if (id === 'calendar') {
-              original = (state.service === 'web') ? PRICES.web.extras.calendar : PRICES.landing.extras.calendar;
-            } else if (id === 'chatbot') {
-              original = (state.service === 'web') ? PRICES.web.extras.chatbot : PRICES.landing.extras.chatbot;
-            } else if (id === 'gallery') {
-              original = PRICES.web.extras.gallery;
-            } else if (id === 'blog') {
-              original = PRICES.web.extras.blog;
-            } else if (id === 'paymentGateway') {
-              original = PRICES.web.extras.paymentGateway;
-            }
-            const discountPct = DISCOUNTS[Math.min(idx, DISCOUNTS.length - 1)] || 0;
-            const discounted = Math.round(original * (1 - discountPct));
-            appliedExtras.push({
-              id, original, discountPct, discounted
-            });
-            extrasTotal += discounted;
-          });
+    /* pages count */
+    pagesCountInput.addEventListener('input', (e) => {
+      const val = parseInt(e.target.value) || 1;
+      state.pagesCount = Math.max(1, val);
+      recalc();
+    });
 
-          const subtotal = base + extrasTotal;
-          const total = subtotal;
+    /* --- Core recalc function --- */
+    function recalc() {
+      let base = 0;
+      let serviceLabel = '—';
+      if (state.service === 'landing') {
+        serviceLabel = 'Landing Page';
+        if (state.landingFrom === 'existing') base = PRICES.landing.existing;
+        else if (state.landingFrom === 'fromZero') base = PRICES.landing.fromZero;
+      } else if (state.service === 'web') {
+        serviceLabel = (state.webType === 'ecommerce') ? 'E-commerce' : 'Página Web (estática)';
+        if (state.webType === 'static') base = PRICES.web.static;
+        else if (state.webType === 'ecommerce') base = PRICES.web.ecommerce;
+      }
 
-          resService.textContent = serviceLabel;
-          resBase.textContent = fmt(base);
-          resExtras.innerHTML = '';
-          if (appliedExtras.length === 0) {
-            resExtras.innerHTML = '<div class="tiny muted">No hay extras seleccionados</div>';
-          } else {
-            appliedExtras.forEach(a => {
-              const row = document.createElement('div');
-              row.className = 'row';
-              row.innerHTML = `<div style="max-width:70%"><div style="font-weight:600">${prettyExtraLabel(a.id)}</div><div class="tiny muted">${a.discountPct > 0 ? ('Descuento ' + Math.round(a.discountPct * 100) + '%') : 'Sin descuento'}</div></div>
+      const appliedExtras = [];
+      let extrasTotal = 0;
+      state.extrasSelectedOrder.forEach((id, idx) => {
+        if (!state.extrasChecked[id]) return;
+        let original = 0;
+        if (id === 'integrationPerPage') {
+          original = PRICES.web.extras.integrationPerPage * (state.pagesCount || 1);
+        } else if (id === 'ga' || id === 'ads' || id === 'tagManager') {
+          original = PRICES.landing.extras.ga;
+        } else if (id === 'smartForm') {
+          original = (state.service === 'web') ? PRICES.web.extras.smartForm : PRICES.landing.extras.smartForm;
+        } else if (id === 'calendar') {
+          original = (state.service === 'web') ? PRICES.web.extras.calendar : PRICES.landing.extras.calendar;
+        } else if (id === 'chatbot') {
+          original = (state.service === 'web') ? PRICES.web.extras.chatbot : PRICES.landing.extras.chatbot;
+        } else if (id === 'gallery') {
+          original = PRICES.web.extras.gallery;
+        } else if (id === 'blog') {
+          original = PRICES.web.extras.blog;
+        } else if (id === 'paymentGateway') {
+          original = PRICES.web.extras.paymentGateway;
+        }
+        const discountPct = DISCOUNTS[Math.min(idx, DISCOUNTS.length - 1)] || 0;
+        const discounted = Math.round(original * (1 - discountPct));
+        appliedExtras.push({
+          id, original, discountPct, discounted
+        });
+        extrasTotal += discounted;
+      });
+
+      const subtotal = base + extrasTotal;
+      const total = subtotal;
+
+      resService.textContent = serviceLabel;
+      resBase.textContent = fmt(base);
+      resExtras.innerHTML = '';
+      if (appliedExtras.length === 0) {
+        resExtras.innerHTML = '<div class="tiny muted">No hay extras seleccionados</div>';
+      } else {
+        appliedExtras.forEach(a => {
+          const row = document.createElement('div');
+          row.className = 'row';
+          row.innerHTML = `<div style="max-width:70%"><div style="font-weight:600">${prettyExtraLabel(a.id)}</div><div class="tiny muted">${a.discountPct > 0 ? ('Descuento ' + Math.round(a.discountPct * 100) + '%') : 'Sin descuento'}</div></div>
                 <div style="text-align:right">
                   <div style="font-weight:700">${fmt(a.discounted)}</div>
                   <div class="tiny muted">(${fmt(a.original)})</div>
                 </div>`;
-              resExtras.appendChild(row);
-            });
-          }
+          resExtras.appendChild(row);
+        });
+      }
 
-          resSubtotal.textContent = fmt(subtotal);
-          resTotal.textContent = fmt(total);
-          liveTotal.textContent = fmt(total);
-          renderFinalBreakdown(base, appliedExtras, total);
-        }
+      resSubtotal.textContent = fmt(subtotal);
+      resTotal.textContent = fmt(total);
+      liveTotal.textContent = fmt(total);
+      renderFinalBreakdown(base, appliedExtras, total);
+    }
 
-        function prettyExtraLabel(id) {
-          const m = EXTRAS_META.find(x => x.id === id);
-          return m ? m.label : id;
-        }
+    function prettyExtraLabel(id) {
+      const m = EXTRAS_META.find(x => x.id === id);
+      return m ? m.label : id;
+    }
 
-        function renderFinalBreakdown(base, appliedExtras, total) {
-          finalBreakdown.innerHTML = '';
-          const baseRow = document.createElement('div');
-          baseRow.className = 'row';
-          baseRow.innerHTML = `<div>Base</div><div>${fmt(base)}</div>`;
-          finalBreakdown.appendChild(baseRow);
+    function renderFinalBreakdown(base, appliedExtras, total) {
+      finalBreakdown.innerHTML = '';
+      const baseRow = document.createElement('div');
+      baseRow.className = 'row';
+      baseRow.innerHTML = `<div>Base</div><div>${fmt(base)}</div>`;
+      finalBreakdown.appendChild(baseRow);
 
-          if (appliedExtras.length) {
-            const title = document.createElement('div');
-            title.style.marginTop = '8px';
-            title.innerHTML = '<strong>Extras (desglosado)</strong>';
-            finalBreakdown.appendChild(title);
+      if (appliedExtras.length) {
+        const title = document.createElement('div');
+        title.style.marginTop = '8px';
+        title.innerHTML = '<strong>Extras (desglosado)</strong>';
+        finalBreakdown.appendChild(title);
 
-            appliedExtras.forEach(a => {
-              const d = document.createElement('div');
-              d.className = 'row';
-              d.innerHTML = `<div style="max-width:70%"><div style="font-weight:600; max-width:70%;padding:3px;">${prettyExtraLabel(a.id)}</div><div class="tiny muted">${a.discountPct > 0 ? ('Descuento ' + Math.round(a.discountPct * 100) + '%') : 'Sin descuento'}</div></div>
+        appliedExtras.forEach(a => {
+          const d = document.createElement('div');
+          d.className = 'row';
+          d.innerHTML = `<div style="max-width:70%"><div style="font-weight:600; max-width:70%;padding:3px;">${prettyExtraLabel(a.id)}</div><div class="tiny muted">${a.discountPct > 0 ? ('Descuento ' + Math.round(a.discountPct * 100) + '%') : 'Sin descuento'}</div></div>
                 <div style="text-align:right">
                   <div style="font-weight:700">${fmt(a.discounted)}</div>
                   <div class="tiny muted">(${fmt(a.original)})</div>
                 </div>`;
-              finalBreakdown.appendChild(d);
-            });
-          } else {
-            const none = document.createElement('div');
-            none.className = 'tiny muted';
-            none.style.marginTop = '8px';
-            none.textContent = 'No hay extras seleccionados.';
-            finalBreakdown.appendChild(none);
-          }
+          finalBreakdown.appendChild(d);
+        });
+      } else {
+        const none = document.createElement('div');
+        none.className = 'tiny muted';
+        none.style.marginTop = '8px';
+        none.textContent = 'No hay extras seleccionados.';
+        finalBreakdown.appendChild(none);
+      }
 
-          const totalRow = document.createElement('div');
-          totalRow.className = 'total';
-          totalRow.innerHTML = `<div>Total estimado</div><div>${fmt(total)}</div>`;
-          finalBreakdown.appendChild(totalRow);
+      const totalRow = document.createElement('div');
+      totalRow.className = 'total';
+      totalRow.innerHTML = `<div>Total estimado</div><div>${fmt(total)}</div>`;
+      finalBreakdown.appendChild(totalRow);
+    }
+
+    function buildWhatsAppMessage() {
+      const appliedExtras = state.extrasSelectedOrder.filter(id => state.extrasChecked[id]);
+      let base = 0;
+      if (state.service === 'landing') {
+        base = (state.landingFrom === 'existing') ? PRICES.landing.existing : PRICES.landing.fromZero;
+      } else if (state.service === 'web') {
+        base = (state.webType === 'ecommerce') ? PRICES.web.ecommerce : PRICES.web.static;
+      }
+
+      let extrasDetailLines = [];
+      let extrasTotal = 0;
+      appliedExtras.forEach((id, idx) => {
+        let original = 0;
+        if (id === 'integrationPerPage') {
+          original = PRICES.web.extras.integrationPerPage * (state.pagesCount || 1);
+        } else if (id === 'ga' || id === 'ads' || id === 'tagManager') {
+          original = PRICES.landing.extras.ga;
+        } else if (id === 'smartForm') {
+          original = (state.service === 'web') ? PRICES.web.extras.smartForm : PRICES.landing.extras.smartForm;
+        } else if (id === 'calendar') {
+          original = (state.service === 'web') ? PRICES.web.extras.calendar : PRICES.landing.extras.calendar;
+        } else if (id === 'chatbot') {
+          original = (state.service === 'web') ? PRICES.web.extras.chatbot : PRICES.landing.extras.chatbot;
+        } else if (id === 'gallery') {
+          original = PRICES.web.extras.gallery;
+        } else if (id === 'blog') {
+          original = PRICES.web.extras.blog;
+        } else if (id === 'paymentGateway') {
+          original = PRICES.web.extras.paymentGateway;
         }
+        const discountPct = DISCOUNTS[Math.min(idx, DISCOUNTS.length - 1)] || 0;
+        const discounted = Math.round(original * (1 - discountPct));
+        extrasTotal += discounted;
+        extrasDetailLines.push({
+          id, label: prettyExtraLabel(id), original, discountPct, discounted
+        });
+      });
 
-        function buildWhatsAppMessage() {
-          const appliedExtras = state.extrasSelectedOrder.filter(id => state.extrasChecked[id]);
-          let base = 0;
-          if (state.service === 'landing') {
-            base = (state.landingFrom === 'existing') ? PRICES.landing.existing : PRICES.landing.fromZero;
-          } else if (state.service === 'web') {
-            base = (state.webType === 'ecommerce') ? PRICES.web.ecommerce : PRICES.web.static;
+      const subtotal = base + extrasTotal;
+      let lines = [];
+      lines.push('Hola, quiero un presupuesto para desarrollo web:');
+      lines.push('');
+      if (state.service === 'landing') {
+        lines.push(`Servicio: Landing Page (${state.landingFrom === 'existing' ? 'Agregar a web existente' : 'Crear desde cero'})`);
+      } else {
+        lines.push(`Servicio: ${state.webType === 'ecommerce' ? 'E-commerce' : 'Página web estática'}`);
+        if (state.service === 'web') lines.push(`Número de páginas: ${state.pagesCount || 1}`);
+      }
+      lines.push(`Precio base: ${fmt(base)}`);
+      lines.push('');
+      if (extrasDetailLines.length) {
+        lines.push('Extras:');
+        extrasDetailLines.forEach((e, i) => {
+          const discText = e.discountPct > 0 ? `descuento ${Math.round(e.discountPct * 100)}%` : 'sin descuento';
+          lines.push(`${i + 1}. ${e.label}: ${fmt(e.discounted)} (${fmt(e.original)}, ${discText})`);
+        });
+        lines.push('');
+      } else {
+        lines.push('No se seleccionaron extras.');
+        lines.push('');
+      }
+      lines.push(`Total estimado: ${fmt(subtotal)}`);
+      lines.push('');
+      if (state.contact.name) lines.push(`Nombre: ${state.contact.name}`);
+      if (state.contact.email) lines.push(`Email: ${state.contact.email}`);
+      if (state.contact.notes) lines.push(`Notas: ${state.contact.notes}`);
+      lines.push('');
+      lines.push('Gracias.');
+
+      const message = lines.join('\n');
+      const url = `https://wa.me/${telefono}?text=${encodeURIComponent(message)}`;
+      return { url, message };
+    }
+
+    /* ---------- Navigation wiring ---------- */
+    document.getElementById('next-1').addEventListener('click', () => {
+      if (!state.service) {
+        alert('Selecciona un tipo de servicio');
+        return;
+      }
+      currentStepShow(2);
+    });
+    document.getElementById('back-2').addEventListener('click', () => currentStepShow(1));
+    document.getElementById('next-2').addEventListener('click', () => {
+      if (state.service === 'landing' && !state.landingFrom) {
+        alert('Selecciona la configuración (ej. agregar a web existente o crear desde cero).');
+        return;
+      }
+      if (state.service === 'web' && !state.webType) {
+        alert('Selecciona el tipo de web (estática o e-commerce).');
+        return;
+      }
+      currentStepShow(3);
+    });
+    document.getElementById('back-3').addEventListener('click', () => currentStepShow(2));
+    document.getElementById('next-3').addEventListener('click', () => {
+      currentStepShow(4);
+    });
+    document.getElementById('back-4').addEventListener('click', () => currentStepShow(3));
+    document.getElementById('sendWhatsApp').addEventListener('click', () => {
+      const { url } = buildWhatsAppMessage();
+      window.open(url, '_blank');
+    });
+
+    /* helper to show step and update progress pills */
+    function currentStepShow(n) {
+      document.querySelectorAll('.calc-step').forEach(el => el.classList.remove('active'));
+      document.getElementById('step-' + n).classList.add('active');
+      document.querySelectorAll('.step-pill').forEach((p, idx) => {
+        if (idx < n) p.classList.add('active'); else p.classList.remove('active');
+      });
+    }
+
+    /* ---------- Initialize defaults and renderers ---------- */
+    selectService('landing');
+    document.querySelector('#serviceOptions .option[data-value="landing"]').classList.add('active');
+    renderConfigOptions();
+    renderExtras();
+    recalc();
+
+    /* Small helper to keep paymentGateway checkbox enabled/disabled depending on webType */
+    setInterval(() => {
+      const pgCheckbox = document.querySelector('input[data-id="paymentGateway"]');
+      if (pgCheckbox) {
+        if (state.webType !== 'ecommerce') {
+          pgCheckbox.disabled = true;
+          pgCheckbox.closest('.option') && (pgCheckbox.closest('.option').style.opacity = 0.6);
+          if (state.extrasChecked['paymentGateway']) {
+            state.extrasChecked['paymentGateway'] = false;
+            state.extrasSelectedOrder = state.extrasSelectedOrder.filter(x => x !== 'paymentGateway');
+            pgCheckbox.checked = false;
+            recalc();
           }
-
-          let extrasDetailLines = [];
-          let extrasTotal = 0;
-          appliedExtras.forEach((id, idx) => {
-            let original = 0;
-            if (id === 'integrationPerPage') {
-              original = PRICES.web.extras.integrationPerPage * (state.pagesCount || 1);
-            } else if (id === 'ga' || id === 'ads' || id === 'tagManager') {
-              original = PRICES.landing.extras.ga;
-            } else if (id === 'smartForm') {
-              original = (state.service === 'web') ? PRICES.web.extras.smartForm : PRICES.landing.extras.smartForm;
-            } else if (id === 'calendar') {
-              original = (state.service === 'web') ? PRICES.web.extras.calendar : PRICES.landing.extras.calendar;
-            } else if (id === 'chatbot') {
-              original = (state.service === 'web') ? PRICES.web.extras.chatbot : PRICES.landing.extras.chatbot;
-            } else if (id === 'gallery') {
-              original = PRICES.web.extras.gallery;
-            } else if (id === 'blog') {
-              original = PRICES.web.extras.blog;
-            } else if (id === 'paymentGateway') {
-              original = PRICES.web.extras.paymentGateway;
-            }
-            const discountPct = DISCOUNTS[Math.min(idx, DISCOUNTS.length - 1)] || 0;
-            const discounted = Math.round(original * (1 - discountPct));
-            extrasTotal += discounted;
-            extrasDetailLines.push({
-              id, label: prettyExtraLabel(id), original, discountPct, discounted
-            });
-          });
-
-          const subtotal = base + extrasTotal;
-          let lines = [];
-          lines.push('Hola, quiero un presupuesto para desarrollo web:');
-          lines.push('');
-          if (state.service === 'landing') {
-            lines.push(`Servicio: Landing Page (${state.landingFrom === 'existing' ? 'Agregar a web existente' : 'Crear desde cero'})`);
-          } else {
-            lines.push(`Servicio: ${state.webType === 'ecommerce' ? 'E-commerce' : 'Página web estática'}`);
-            if (state.service === 'web') lines.push(`Número de páginas: ${state.pagesCount || 1}`);
-          }
-          lines.push(`Precio base: ${fmt(base)}`);
-          lines.push('');
-          if (extrasDetailLines.length) {
-            lines.push('Extras:');
-            extrasDetailLines.forEach((e, i) => {
-              const discText = e.discountPct > 0 ? `descuento ${Math.round(e.discountPct * 100)}%` : 'sin descuento';
-              lines.push(`${i + 1}. ${e.label}: ${fmt(e.discounted)} (${fmt(e.original)}, ${discText})`);
-            });
-            lines.push('');
-          } else {
-            lines.push('No se seleccionaron extras.');
-            lines.push('');
-          }
-          lines.push(`Total estimado: ${fmt(subtotal)}`);
-          lines.push('');
-          if (state.contact.name) lines.push(`Nombre: ${state.contact.name}`);
-          if (state.contact.email) lines.push(`Email: ${state.contact.email}`);
-          if (state.contact.notes) lines.push(`Notas: ${state.contact.notes}`);
-          lines.push('');
-          lines.push('Gracias.');
-
-          const message = lines.join('\n');
-          const url = `https://wa.me/${telefono}?text=${encodeURIComponent(message)}`;
-          return { url, message };
+        } else {
+          pgCheckbox.disabled = false;
+          pgCheckbox.closest('.option') && (pgCheckbox.closest('.option').style.opacity = 1);
         }
+      }
+    }, 400);
+  </script>
 
-        /* ---------- Navigation wiring ---------- */
-        document.getElementById('next-1').addEventListener('click', () => {
-          if (!state.service) {
-            alert('Selecciona un tipo de servicio');
-            return;
-          }
-          currentStepShow(2);
-        });
-        document.getElementById('back-2').addEventListener('click', () => currentStepShow(1));
-        document.getElementById('next-2').addEventListener('click', () => {
-          if (state.service === 'landing' && !state.landingFrom) {
-            alert('Selecciona la configuración (ej. agregar a web existente o crear desde cero).');
-            return;
-          }
-          if (state.service === 'web' && !state.webType) {
-            alert('Selecciona el tipo de web (estática o e-commerce).');
-            return;
-          }
-          currentStepShow(3);
-        });
-        document.getElementById('back-3').addEventListener('click', () => currentStepShow(2));
-        document.getElementById('next-3').addEventListener('click', () => {
-          currentStepShow(4);
-        });
-        document.getElementById('back-4').addEventListener('click', () => currentStepShow(3));
-        document.getElementById('sendWhatsApp').addEventListener('click', () => {
-          const { url } = buildWhatsAppMessage();
-          window.open(url, '_blank');
-        });
-
-        /* helper to show step and update progress pills */
-        function currentStepShow(n) {
-          document.querySelectorAll('.calc-step').forEach(el => el.classList.remove('active'));
-          document.getElementById('step-' + n).classList.add('active');
-          document.querySelectorAll('.step-pill').forEach((p, idx) => {
-            if (idx < n) p.classList.add('active'); else p.classList.remove('active');
-          });
-        }
-
-        /* ---------- Initialize defaults and renderers ---------- */
-        selectService('landing');
-        document.querySelector('#serviceOptions .option[data-value="landing"]').classList.add('active');
-        renderConfigOptions();
-        renderExtras();
-        recalc();
-
-        /* Small helper to keep paymentGateway checkbox enabled/disabled depending on webType */
-        setInterval(() => {
-          const pgCheckbox = document.querySelector('input[data-id="paymentGateway"]');
-          if (pgCheckbox) {
-            if (state.webType !== 'ecommerce') {
-              pgCheckbox.disabled = true;
-              pgCheckbox.closest('.option') && (pgCheckbox.closest('.option').style.opacity = 0.6);
-              if (state.extrasChecked['paymentGateway']) {
-                state.extrasChecked['paymentGateway'] = false;
-                state.extrasSelectedOrder = state.extrasSelectedOrder.filter(x => x !== 'paymentGateway');
-                pgCheckbox.checked = false;
-                recalc();
-              }
-            } else {
-              pgCheckbox.disabled = false;
-              pgCheckbox.closest('.option') && (pgCheckbox.closest('.option').style.opacity = 1);
-            }
-          }
-        }, 400);
-    </script>
-
-    <!-- Scroll Reveal -->
-    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
-    <script>
-        ScrollReveal().reveal('h1, h2, h3, h4, h5, p, div[class*="col-"], .testimonial-item, .team-item', {
-            delay: 100,
-            distance: '50px',
-            origin: 'bottom',
-            opacity: 0,
-            duration: 750,
-            easing: 'cubic-bezier(0.5, 0, 0, 1)',
-            interval: 100,
-            reset: false
-        });
-    </script>
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+  <script>
+    ScrollReveal().reveal('h1, h2, h3, h4, h5, p, div[class*="col-"], .testimonial-item, .team-item', {
+      delay: 100,
+      distance: '50px',
+      origin: 'bottom',
+      opacity: 0,
+      duration: 750,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      interval: 100,
+      reset: false
+    });
+  </script>
 </body>
+
 </html>
